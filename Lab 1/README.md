@@ -10,15 +10,7 @@ For lab this week, we draw on this and other inspirations from theatre to stage 
 
 _Make sure you read all the instructions and understand the whole of the laboratory activity before starting!_
 
-
-
 ## Prep
-
-### To start the semester, you will need:
-1. Read about Git [here](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F).
-2. Set up your own Github "Lab Hub" repository to keep all you work in record by [following these instructions](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2021Fall/readings/Submitting%20Labs.md).
-3. Set up the README.md for your Hub repository (for instance, so that it has your name and points to your own Lab 1) and [learn how to](https://guides.github.com/features/mastering-markdown/) organize and post links to your submissions on your README.md so we can find them easily.
-
 
 ### For this lab, you will need:
 1. Paper
@@ -65,7 +57,7 @@ _Activity:_ The blinking light reminds someone to leave now from their room or a
 
 _Goals:_ Get to the elevator with 10 minutes to spare before class.
 
-![Note Aug 29, 2022](https://user-images.githubusercontent.com/50084830/187290336-ac9d0570-7315-4448-b72c-7edfa9630cf2.jpg)
+![Note Aug 29, 2022](https://user-images.githubusercontent.com/50084830/187303418-62b822c8-10af-45ea-ad1b-056125fc1a9e.jpg)
 
 \*\***Feedback**\*\*
 Would be very helpful for reminding yourself just like setting alarms, but less intrusive to those around you. May be better suited to nighttime alarms since it will be faint in the daylight.
@@ -83,38 +75,25 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-
 https://user-images.githubusercontent.com/50084830/187295110-84134cde-a810-429a-8062-0ba75e919445.MOV
 
-
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
-
-\*\***Show the follow-up work here.**\*\*
+![IMG-4261](https://user-images.githubusercontent.com/50084830/187297588-08091208-e2e1-4258-b4e5-a5312bc0cba7.jpg)
 
 ## Part E. Costume the device
 
-Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
+![IMG-0179](https://user-images.githubusercontent.com/50084830/187299462-d953f318-2f97-402a-a554-88840b943226.JPG)
 
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
-
-\*\***Include sketches of what your devices might look like here.**\*\*
-
-\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
-
+The device is designed to blend it with the rest of the apartment, as normal as possible until required to be an alarm.
 
 ## Part F. Record
 
-\*\***Take a video of your prototyped interaction.**\*\*
+https://user-images.githubusercontent.com/50084830/187303211-b705a3d0-7db7-48d8-87e4-b09a619ec55d.mov
 
-\*\***Please indicate anyone you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+Inspiration from Broadway, iamge and video help from Jacob Everly. 
 
-
-
-# Staging Interaction, Part 2 
+# Staging Interaction, Part 2
 
 This describes the second week's work for this lab activity.
-
 
 ## Prep (to be done before Lab on Wednesday)
 
