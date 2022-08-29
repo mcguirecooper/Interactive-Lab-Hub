@@ -57,53 +57,26 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 ## Part A. Plan 
 
-To stage an interaction with your interactive device, think about:
-
-_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
-
-_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
-
-_Activity:_ What is happening between the actors?
-
-_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
-
-The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
-
-\*\***_Setting:_ In an apartment bedroom or living area.
+_Setting:_ In an apartment bedroom or living area.
 
 _Players:_ Myself or any student, employee, or person with a need to leave at an exact time. 
 
 _Activity:_ The blinking light reminds someone to leave now from their room or apartment. Just like an intermission signal at a Broadway show. 
 
-_Goals:_ Get to the elevator with 10 minutes to spare before class.**\*\*
-
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
+_Goals:_ Get to the elevator with 10 minutes to spare before class.
 
 ![Note Aug 29, 2022](https://user-images.githubusercontent.com/50084830/187290336-ac9d0570-7315-4448-b72c-7edfa9630cf2.jpg)
 
-Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
-
-\*\***Would be very helpful for reminding yourself just like setting alarms, but less intrusive to those around you. May be better suited to nighttime alarms since it will be faint in the daylight.**\*\*
-
+\*\***Feedback**\*\*
+Would be very helpful for reminding yourself just like setting alarms, but less intrusive to those around you. May be better suited to nighttime alarms since it will be faint in the daylight.
 
 ## Part B. Act out the Interaction
 
-Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
-
-\*\***The interaction was tested using the tinkerbelle link on my phone and computer. The different colors work really well for signalling a traffic stop style of alarm response. As with other projects, it seems the colored screen is too dim to gain the attraction of many while their attention is on another task. Peripheral vision may be to much to rely on. Pairing a sound with the alarm or maybe just adding more lights will help alert people more often.**\*\*
+The interaction was tested using the tinkerbelle link on my phone and computer. The different colors work really well for signalling a traffic stop style of alarm response. As with other projects, it seems the colored screen is too dim to gain the attraction of many while their attention is on another task. Peripheral vision may be to much to rely on. Pairing a sound with the alarm or maybe just adding more lights will help alert people more often.
 
 ## Part C. Prototype the device
 
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
-
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
-
-We invented this tool for this lab! 
-
-If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
-
-\*\***Give us feedback on Tinkerbelle.**\*\*
-
+Wish I could schedule audio and color changes in time through code. 
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
@@ -113,7 +86,6 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
-
 
 ## Part E. Costume the device
 
