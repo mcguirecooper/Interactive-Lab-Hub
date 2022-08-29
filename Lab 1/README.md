@@ -69,7 +69,15 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
-\*\***Describe your setting, players, activity and goals here.**\*\*
+\*\***
+_Setting:_ In an apartment bedroom or living area.
+
+_Players:_ Myself or any student, employee, or person with a need to leave at an exact time. 
+
+_Activity:_ The blinking light reminds someone to leave now from their room or apartment. Just like an intermission signal at a Broadway show. 
+
+_Goals:_ Get to the elevator with 10 minutes to spare before class. 
+**\*\*
 
 Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
 
@@ -77,17 +85,14 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
-\*\***Summarize feedback you got here.**\*\*
+\*\***Would be very helpful for reminding yourself just like setting alarms, but less intrusive to those around you. May be better suited to nighttime alarms since it will be faint in the daylight.**\*\*
 
 
 ## Part B. Act out the Interaction
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
-\*\***Are there things that seemed better on paper than acted out?**\*\*
-
-\*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
-
+\*\***The interaction was tested using the tinkerbelle link on my phone and computer. The different colors work really well for signalling a traffic stop style of alarm response. As with other projects, it seems the colored screen is too dim to gain the attraction of many while their attention is on another task. Peripheral vision may be to much to rely on. Pairing a sound with the alarm or maybe just adding more lights will help alert people more often.**\*\*
 
 ## Part C. Prototype the device
 
