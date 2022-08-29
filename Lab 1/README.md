@@ -83,6 +83,10 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
+
+https://user-images.githubusercontent.com/50084830/187295110-84134cde-a810-429a-8062-0ba75e919445.MOV
+
+
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
