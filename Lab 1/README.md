@@ -69,19 +69,17 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
-\*\***
-_Setting:_ In an apartment bedroom or living area.
+\*\***_Setting:_ In an apartment bedroom or living area.
 
 _Players:_ Myself or any student, employee, or person with a need to leave at an exact time. 
 
 _Activity:_ The blinking light reminds someone to leave now from their room or apartment. Just like an intermission signal at a Broadway show. 
 
-_Goals:_ Get to the elevator with 10 minutes to spare before class. 
-**\*\*
+_Goals:_ Get to the elevator with 10 minutes to spare before class.**\*\*
 
 Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
 
-\*\***Include pictures of your storyboards here**\*\*
+![Note Aug 29, 2022](https://user-images.githubusercontent.com/50084830/187290336-ac9d0570-7315-4448-b72c-7edfa9630cf2.jpg)
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
