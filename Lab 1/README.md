@@ -87,19 +87,14 @@ The device is designed to blend it with the rest of the apartment, as normal as 
 
 ## Part F. Record
 
-https://user-images.githubusercontent.com/50084830/187303211-b705a3d0-7db7-48d8-87e4-b09a619ec55d.mov
+https://user-images.githubusercontent.com/50084830/188335891-a9430327-1f21-4508-b141-ade170a32a1a.mp4
 
-Inspiration from Broadway, iamge and video help from Jacob Everly. 
+Inspiration from Broadway. Assistance with images and video from Jacob Everly. 
 
 # Staging Interaction, Part 2
 
-This describes the second week's work for this lab activity.
-
-## Prep (to be done before Lab on Wednesday)
-
-You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
-
-\*\***Slow down the interaction to make it more than an alert. Use more than red and green to communicate. Expand the functionality to communicate weather.**\*\*
+\*\***Feedback**\*\* 
+Slow down the interaction to make it more than an alert. Use more than a red and green traffic light to communicate. Expand the functionality to communicate weather. Integrate with a directions app or website to incorporate traffic. Traffic can alter the time window that the alerts become more insistent and urgent. 
 
 ## Make it your own
 
@@ -108,4 +103,4 @@ Do last week’s assignment again, but this time:
 2) You can use any modality (e.g., vibration, sound) to prototype the behaviors! Again, be creative! Feel free to fork and modify the tinkerbell code! 
 3) We will be grading with an emphasis on creativity. 
 
-\*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
