@@ -109,4 +109,5 @@ _Activity:_ Due to my own history of being late to classes, I decided to address
 
 _Goals:_ Get to the elevator with 10 minutes to spare before classes begin.
 
-https://user-images.githubusercontent.com/50084830/188502407-c9a83707-a4a3-4a0b-991e-50669f9175b3.mp4
+![Note Aug 29, 2022 (1)](https://user-images.githubusercontent.com/50084830/188503101-fd1808fa-afd3-4134-b5fa-39b4dcf0779a.jpg)
+
