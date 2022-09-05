@@ -111,3 +111,6 @@ _Goals:_ Get to the elevator with 10 minutes to spare before classes begin.
 
 ![Note Aug 29, 2022 (1)](https://user-images.githubusercontent.com/50084830/188503101-fd1808fa-afd3-4134-b5fa-39b4dcf0779a.jpg)
 
+https://user-images.githubusercontent.com/50084830/188515977-f848c7e8-8aa9-4d3b-a271-dc4f60e549bd.mp4
+
+
