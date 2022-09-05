@@ -101,13 +101,15 @@ Inspiration from Broadway. Assistance with images and video from Jacob Everly.
 
 ## Make it your own
 
-_Setting:_ In an apartment bedroom or living area, at The House.
+_Setting:_ In an apartment bedroom or living area, at The House. In a bedside table, a desk, or a living room lamp. 
 
 _Players:_ Myself or any student, employee, or person with a need to leave at an exact time. 
 
 _Activity:_ Due to my own history of being late to classes, I decided to address three common reasons I found. First, in many cases I will sleep through my alarm at the beginning of the day. This is usually due to my unconcious ability to turn off an alarm but not truly wake up. Second, in the cases when I remember to set alarms for midday classes, I am usually wearing headphones while studying or working on assignments. Thus, I don't even realize an alarm is going off. Third, and very specific to living on campus, elevators become very crowded five minutes before classes as everyone leaves as late as they can. This can mean I have to wait for a couple elevators to pass through before I find one with space. There are two main functions of the device: 1) blinking lights and sounds remind someone to leave now from their room or apartment, and 2) a gentle brightening of the lights before eventual softer alarm sounds to wake someone up after sleeping overnight.
 
 _Goals:_ Get to the elevator with 10 minutes to spare before classes begin.
+
+How it works: This smart-bulb is enhanced with a small speaker to provide both audio and visual cues for the alarm. It connects with your Apple Home app and Clock apps to schedule the lighting events. There is rudimentary logic to control what type of alarm it is depending on what time of day it is. 
 
 ![Note Aug 29, 2022 (1)](https://user-images.githubusercontent.com/50084830/188503101-fd1808fa-afd3-4134-b5fa-39b4dcf0779a.jpg)
 
