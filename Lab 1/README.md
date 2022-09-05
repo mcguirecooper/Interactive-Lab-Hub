@@ -94,13 +94,19 @@ Inspiration from Broadway. Assistance with images and video from Jacob Everly.
 # Staging Interaction, Part 2
 
 \*\***Feedback**\*\* 
-Slow down the interaction to make it more than an alert. Use more than a red and green traffic light to communicate. Expand the functionality to communicate weather. Integrate with a directions app or website to incorporate traffic. Traffic can alter the time window that the alerts become more insistent and urgent. 
+- Slow down the interaction to make it more than an alert. 
+- Use more than a red and green traffic light to communicate. 
+- Expand the functionality to communicate weather. 
+- Integrate with a directions app or website to incorporate traffic. Traffic can alter the time window that the alerts become more insistent and urgent. 
 
 ## Make it your own
 
-Do last week’s assignment again, but this time: 
-1) It doesn’t have to (just) use light, 
-2) You can use any modality (e.g., vibration, sound) to prototype the behaviors! Again, be creative! Feel free to fork and modify the tinkerbell code! 
-3) We will be grading with an emphasis on creativity. 
+_Setting:_ In an apartment bedroom or living area, at The House.
 
+_Players:_ Myself or any student, employee, or person with a need to leave at an exact time. 
 
+_Activity:_ Due to my own history of being late to classes, I decided to address three common reasons I found. First, in many cases I will sleep through my alarm at the beginning of the day. This is usually due to my unconcious ability to turn off an alarm but not truly wake up. Second, in the cases when I remember to set alarms for midday classes, I am usually wearing headphones while studying or working on assignments. Thus, I don't even realize an alarm is going off. Third, and very specific to living on campus, elevators become very crowded five minutes before classes as everyone leaves as late as they can. This can mean I have to wait for a couple elevators to pass through before I find one with space. There are two main functions of the device: 1) blinking lights and sounds remind someone to leave now from their room or apartment, and 2) a gentle brightening of the lights before eventual softer alarm sounds to wake someone up after sleeping overnight.
+
+_Goals:_ Get to the elevator with 10 minutes to spare before classes begin.
+
+https://user-images.githubusercontent.com/50084830/188502407-c9a83707-a4a3-4a0b-991e-50669f9175b3.mp4
