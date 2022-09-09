@@ -180,14 +180,11 @@ Now you should be able to edit python scripts with Thonny on your Pi.
 ## Part E.
 ### Modify the barebones clock to make it your own
 
-Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
-
-Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
-
 Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www.billverplank.com/IxDSketchBook.pdf)!
 
-**We strongly discourage and will reject the results of literal digital or analog clock display.**
+The moon will orbit around the earth depending on the time of day.
 
+![pixil-layer-Layer 1](https://user-images.githubusercontent.com/50084830/189417294-30fefc7b-dbbc-4895-bd64-5f3b41a0d885.png)
 
 \*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
 
