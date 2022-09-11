@@ -202,7 +202,12 @@ After that, Git will ask you to login to your GitHub account to push the updates
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-\*\*\***Take a video of your PiClock.**\*\*\*
+I could set the moon revolution rate to be accurate at one per day, but for the video and testing I have it set to one per minute. 
+
+Sorry for the terrible video quality. It's hard to make the colors show up on camera. 
+
+https://user-images.githubusercontent.com/50084830/189543661-40abb9ee-f37d-4403-8aff-9d3caaeee748.MOV
+
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
