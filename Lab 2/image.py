@@ -10,7 +10,7 @@ not support PIL/pillow (python imaging library)!
 
 Author(s): Melissa LeBlanc-Williams for Adafruit Industries
 """
-
+from time import strftime, sleep
 import digitalio
 import board
 from PIL import Image, ImageDraw
@@ -74,11 +74,11 @@ draw = ImageDraw.Draw(image)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image)
 
-image = Image.open("red.jpg")
+im = Image.open('pixil-frame-1.jpg') 
+im = im.rotate(180)
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
-
 
 # Scale the image to the smaller screen dimension
 image_ratio = image.width / image.height
@@ -89,13 +89,29 @@ if screen_ratio < image_ratio:
 else:
     scaled_width = width
     scaled_height = image.height * width // image.width
-image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
+im = im.resize((scaled_width, scaled_height), Image.BICUBIC)
 
 # Crop and center the image
 x = scaled_width // 2 - width // 2
 y = scaled_height // 2 - height // 2
-image = image.crop((x, y, x + width, y + height))
+im = im.crop((x, y, x + width, y + height))
+
+#orbit ellipse shape
+draw_orbit = ImageDraw.Draw(im)
+draw_orbit.ellipse((52, 190, 72, 210), fill=(220,220,220))
+
+#orbiting moon
+#draw_moon = ImageDraw.Draw(im)
+ul, ur, ll, lr = 7, 40, 117, 200
+#draw_moon.ellipse((ul, ur, ll, lr), outline=(220,220,220))
+
+while True:
+    draw_moon = ImageDraw.Draw(im)
+    draw_moon.ellipse((ul, ur, ll, lr), outline=(220,220,220))
+
+    ul, ur, ll, lr = 7+5, 40+5, 117+5, 200+5
+    sleep(1)
+
 
 # Display image.
-disp.image(image)
-
+disp.image(im)
