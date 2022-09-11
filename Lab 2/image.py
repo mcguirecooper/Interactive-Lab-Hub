@@ -10,6 +10,7 @@ not support PIL/pillow (python imaging library)!
 
 Author(s): Melissa LeBlanc-Williams for Adafruit Industries
 """
+import math
 from time import strftime, sleep
 import digitalio
 import board
@@ -74,44 +75,55 @@ draw = ImageDraw.Draw(image)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image)
 
-im = Image.open('pixil-frame-1.jpg') 
-im = im.rotate(180)
+back = Image.open('pixil-frame-1.jpg') 
+back = back.rotate(180)
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
 # Scale the image to the smaller screen dimension
-image_ratio = image.width / image.height
+image_ratio = back.width / back.height
 screen_ratio = width / height
 if screen_ratio < image_ratio:
-    scaled_width = image.width * height // image.height
+    scaled_width = back.width * height // back.height
     scaled_height = height
 else:
     scaled_width = width
-    scaled_height = image.height * width // image.width
-im = im.resize((scaled_width, scaled_height), Image.BICUBIC)
+    scaled_height = back.height * width // back.width
+back = back.resize((scaled_width, scaled_height), Image.BICUBIC)
 
 # Crop and center the image
 x = scaled_width // 2 - width // 2
 y = scaled_height // 2 - height // 2
-im = im.crop((x, y, x + width, y + height))
+back = back.crop((x, y, x + width, y + height))
 
 #orbit ellipse shape
-draw_orbit = ImageDraw.Draw(im)
-draw_orbit.ellipse((52, 190, 72, 210), fill=(220,220,220))
+draw_orbit = ImageDraw.Draw(back)
+draw_orbit.ellipse((7, 40, 117, 200), outline=(220,220,220))
 
 #orbiting moon
-#draw_moon = ImageDraw.Draw(im)
-ul, ur, ll, lr = 7, 40, 117, 200
-#draw_moon.ellipse((ul, ur, ll, lr), outline=(220,220,220))
+ul_x, ul_y, lr_x, lr_y = 52, 190, 72, 210
+
+#angle on orbit clock that is 12am
+theta = math.pi/2
 
 while True:
-    draw_moon = ImageDraw.Draw(im)
-    draw_moon.ellipse((ul, ur, ll, lr), outline=(220,220,220))
+    draw_moon = ImageDraw.Draw(back)
+    draw_moon.ellipse((ul_x, ul_y, lr_x, lr_y), fill=(0,0,0))
+    draw_orbit.ellipse((7, 40, 117, 200), outline=(220,220,220))
+    draw_orbit.line((62, 195, 62, 205), fill=(255,0,0))
+    draw_orbit.line((62, 35, 62, 45), fill=(255,0,0))
 
-    ul, ur, ll, lr = 7+5, 40+5, 117+5, 200+5
+    ul_x = int(55 * math.cos(theta) + 52)
+    ul_y = int(80 * math.sin(theta) + 110)
+    lr_x = ul_x + 20
+    lr_y = ul_y + 20
+    
+    draw_moon.ellipse((ul_x, ul_y, lr_x, lr_y), fill=(220,220,220))
+
+    disp.image(back)
+    theta += math.pi/30
     sleep(1)
 
-
 # Display image.
-disp.image(im)
+#disp.image(im)
