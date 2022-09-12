@@ -180,9 +180,9 @@ Now you should be able to edit python scripts with Thonny on your Pi.
 ## Part E.
 ### Modify the barebones clock to make it your own
 
-Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www.billverplank.com/IxDSketchBook.pdf)!
-
 The moon will orbit around the earth depending on the time of day.
+
+![Note Aug 29, 2022 (2)](https://user-images.githubusercontent.com/50084830/189562137-2e688f1b-b06c-427f-839a-930c22b5c9fb.jpg)
 
 ![pixil-layer-Layer 1](https://user-images.githubusercontent.com/50084830/189417294-30fefc7b-dbbc-4895-bd64-5f3b41a0d885.png)
 
@@ -202,7 +202,7 @@ After that, Git will ask you to login to your GitHub account to push the updates
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-I could set the moon revolution rate to be accurate at one per day, but for the video and testing I have it set to one per minute. 
+I decided to add two red lines to signify 12am and 12pm on the orbit of the moon, just for readability of the time. I could set the moon revolution rate to be accurate at one per day, but for the video and testing I have it set to one per minute. 
 
 Sorry for the terrible video quality. It's hard to make the colors show up on camera. 
 
