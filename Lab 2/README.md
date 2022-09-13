@@ -212,6 +212,7 @@ https://user-images.githubusercontent.com/50084830/189543661-40abb9ee-f37d-4403-
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+As stated  and sketched above, I would add timer or stopwatch functionality with a separate 'comet' orbit that would be in another color. The functionality would be controlled with a single button push for start/stop.  
 
 # Prep for Part 2
 
