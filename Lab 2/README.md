@@ -216,10 +216,11 @@ As stated  and sketched above, I would add timer or stopwatch functionality with
 
 # Prep for Part 2
 
-1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
-  
+Feedback:
 
-2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
+1. Add functionality for setting the current time. 
+2. Have the earth speed up and slow down depending on the day. For example Fridays and Saturdays go by faster and Mondays and today seem very longer. 
+3. Be able to set a timer with buttons adding 30s on a second orbit so you can keep track of something else, one button to add time, another to start/stop timer. 
 
 # Lab 2 Part 2
 
