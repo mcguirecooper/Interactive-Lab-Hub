@@ -33,18 +33,6 @@ BAUDRATE = 24000000
 # Setup SPI bus using hardware SPI:
 spi = board.SPI()
 
-# pylint: disable=line-too-long
-# Create the display:
-# disp = st7789.ST7789(spi, rotation=90,                            # 2.0" ST7789
-# disp = st7789.ST7789(spi, height=240, y_offset=80, rotation=180,  # 1.3", 1.54" ST7789
-# disp = st7789.ST7789(spi, rotation=90, width=135, height=240, x_offset=53, y_offset=40, # 1.14" ST7789
-# disp = hx8357.HX8357(spi, rotation=180,                           # 3.5" HX8357
-# disp = st7735.ST7735R(spi, rotation=90,                           # 1.8" ST7735R
-# disp = st7735.ST7735R(spi, rotation=270, height=128, x_offset=2, y_offset=3,   # 1.44" ST7735R
-# disp = st7735.ST7735R(spi, rotation=90, bgr=True,                 # 0.96" MiniTFT ST7735R
-# disp = ssd1351.SSD1351(spi, rotation=180,                         # 1.5" SSD1351
-# disp = ssd1351.SSD1351(spi, height=96, y_offset=32, rotation=180, # 1.27" SSD1351
-# disp = ssd1331.SSD1331(spi, rotation=180,                         # 0.96" SSD1331
 disp = st7789.ST7789(
     spi,
     cs=cs_pin,
@@ -56,6 +44,16 @@ disp = st7789.ST7789(
     x_offset=53,
     y_offset=40,
 )
+
+# these setup the code for our buttons and the backlight and tell the pi to treat the GPIO pins as digitalIO vs analogIO
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
 # pylint: enable=line-too-long
 
 # Create blank image for drawing.
@@ -99,31 +97,82 @@ back = back.crop((x, y, x + width, y + height))
 
 #orbit ellipse shape
 draw_orbit = ImageDraw.Draw(back)
-draw_orbit.ellipse((7, 40, 117, 200), outline=(220,220,220))
+draw_orbit.ellipse((12, 40, 112, 200), outline=(220,220,220))
+draw_orbit.ellipse((3, 3, 132, 237), outline=(220,220,220))
 
 #orbiting moon
-ul_x, ul_y, lr_x, lr_y = 52, 190, 72, 210
+ul_x, ul_y, lr_x, lr_y = 62, 190, 82, 210
 
-#angle on orbit clock that is 12am
-theta = math.pi/2
+#orbiting comet
+ul_xc, ul_yc, lr_xc, lr_yc = 65, 234, 71, 240
+
+theta = math.pi/2 #angle on orbit clock that is 12am
+thetac = math.pi/2 #angle on comet clock that is 00:00
+period_moon = 20 #period in seconds of lunar orbit
+period_comet = 10 #period in seconds of comet orbit
+
+button_add_period = 5 #seconds added to period comet or each button press
+
+comet_started = False # if the comet timer is running
+
+sleep_time = 0.20 # draw interval in sec
+timer_left = period_comet # time left on comet timer
 
 while True:
+    
+    draw_comet = ImageDraw.Draw(back)
+    draw_comet.ellipse((ul_xc, ul_yc, lr_xc, lr_yc), fill=(0,0,0))
+    draw_comet.ellipse((3, 3, 132, 237), outline=(220,220,220))
+    draw_orbit.line((68, 230, 68, 240), fill=(0,255,0))
+    draw_orbit.line((68, 0, 68, 10), fill=(0,255,0))
+
+    if timer_left <= 0:
+        comet_started = False
+        draw_explosion = ImageDraw.Draw(back)
+        #r = 35 #61-r, 120-r, 61+r, 120+r
+        draw_explosion.ellipse((57, 60, 65, 180), fill=(255, 234, 0))
+        draw_explosion.ellipse((57, 75, 65, 165), fill=(255, 128, 10))
+        draw_explosion.ellipse((59, 90, 63, 150), fill=(255, 0, 0))
+
+    if comet_started:
+        ul_xc = int(65 * math.cos(thetac) + 65)
+        ul_yc = int(117 * math.sin(thetac) + 117)
+        lr_xc = ul_xc + 6
+        lr_yc = ul_yc + 6
+
+    draw_text = ImageDraw.Draw(back)
+    draw_text.rectangle((0, 225, 30, 240), fill=(0,0,0))
+
+    if not buttonB.value: 
+        if not comet_started:  # b pressed and comet not started
+            comet_started = True # set the comet to start
+            print("B Button Pressed, Timer Started", comet_started)
+        else:  # b pressed and comet currently going
+            comet_started = False # set the comet to pause
+            print("B Button Pressed, Timer Stopped", comet_started)
+    if not buttonA.value and not comet_started:  # a pressed and comet not started
+        period_comet += button_add_period  # add a number of seconds to the comet timer
+        timer_left += button_add_period
+        print("A Button Pressed, Added Time", period_comet)
+        draw_text.text((5, 225), str(period_comet) + 's', fill=(249, 139, 136))
+
     draw_moon = ImageDraw.Draw(back)
     draw_moon.ellipse((ul_x, ul_y, lr_x, lr_y), fill=(0,0,0))
-    draw_orbit.ellipse((7, 40, 117, 200), outline=(220,220,220))
+    draw_orbit.ellipse((12, 40, 112, 200), outline=(220,220,220))
+    draw_orbit.ellipse((3, 3, 132, 237), outline=(220,220,220))
     draw_orbit.line((62, 195, 62, 205), fill=(255,0,0))
     draw_orbit.line((62, 35, 62, 45), fill=(255,0,0))
 
-    ul_x = int(55 * math.cos(theta) + 52)
+    ul_x = int(50 * math.cos(theta) + 52)
     ul_y = int(80 * math.sin(theta) + 110)
     lr_x = ul_x + 20
     lr_y = ul_y + 20
     
+    draw_comet.ellipse((ul_xc, ul_yc, lr_xc, lr_yc), fill=(249, 139, 136))
     draw_moon.ellipse((ul_x, ul_y, lr_x, lr_y), fill=(220,220,220))
-
     disp.image(back)
-    theta += math.pi/30
-    sleep(1)
-
-# Display image.
-#disp.image(im)
+    theta += 2 * math.pi/(period_moon / sleep_time)
+    if comet_started: 
+        thetac += 2 * math.pi/(period_comet / sleep_time)
+        timer_left -= sleep_time
+    sleep(sleep_time)
