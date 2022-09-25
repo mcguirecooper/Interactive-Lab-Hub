@@ -101,7 +101,7 @@ From a remote browser on the same network, check to make sure your webserver is 
 
 ### Storyboard
 
-[Note Sep 25, 2022.pdf](https://github.com/mcguirecooper/Interactive-Lab-Hub/files/9641572/Note.Sep.25.2022.pdf)
+![Note Sep 25 2022](https://user-images.githubusercontent.com/50084830/192161434-e6668dc4-6694-47e1-829d-2db536b197b3.jpg)
 
 Due to the volume of screenings being faced by health departments and hospital systems, there requires rudimentary diagnosis procedures in the time before patients can be examined by professionals. For those who are not aware of the stereotypical signs and symptoms of infection, a speech synthesis and response chatbot can quickly give feedback as to possible exposure. A health vocab dataset can be used to populate a decsriptive field for professionals to look at in the case of possible exposure to assess severity. 
 
