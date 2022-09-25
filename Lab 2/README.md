@@ -1,4 +1,5 @@
 # Interactive Prototyping: The Clock of Pi
+**NAMES OF COLLABORATORS HERE**
 
 Does it feel like time is moving strangely during this semester?
 
@@ -224,12 +225,10 @@ Feedback:
 
 # Lab 2 Part 2
 
-Pull Interactive Lab Hub updates to your repo.
-
-Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
-
-As always, make sure you document contributions and ideas from others explicitly in your writeup.
-
-You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
-
-
+For this second part, I added the requsted timer functionality which can be controlled with the integrated buttons. In the order of what the user sees:
+1. There are now two orbits shown; one for the lunar orbit to track a single day (24 hrs) and another smaller planet or comet that does not move. I call this a comet because it isn't persistently orbiting the earth. I tried to add in a 3D effect to the orbits to make the visuals less top-down. 
+2. The top botton controls what the timer is set for. Each time you press the button, 5 seconds will be added to the timer and to communicate this text appears above to show you your current total time. 
+3. Pressing the bottom button will start/resume and pause the orbit of the comet. A full orbit signifies the entirity of the timer, with hash marks showing 50% time left.
+4. If the user fails to complete their task or does not stop the timer before the time hits zero, the earth with show as exploded. This should add some fun or even punishment to not completing something within your set time. 
+ 
+https://user-images.githubusercontent.com/50084830/190752613-e08b5b46-ce19-4a65-88d5-7628577b1189.mov
