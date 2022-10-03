@@ -101,24 +101,14 @@ From a remote browser on the same network, check to make sure your webserver is 
 
 ### Storyboard
 
-Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
+![Note Sep 25 2022](https://user-images.githubusercontent.com/50084830/192161434-e6668dc4-6694-47e1-829d-2db536b197b3.jpg)
 
-\*\***Post your storyboard and diagram here.**\*\*
+Due to the volume of screenings being faced by health departments and hospital systems, there requires rudimentary diagnosis procedures in the time before patients can be examined by professionals. For those who are not aware of the stereotypical signs and symptoms of infection, a speech synthesis and response chatbot can quickly give feedback as to possible exposure. A health vocab dataset can be used to populate a decsriptive field for professionals to look at in the case of possible exposure to assess severity. 
 
-Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
-\*\***Please describe and document your process.**\*\*
+https://user-images.githubusercontent.com/50084830/192161278-8071cf0a-1b99-4f76-8e5b-1eb619a6b90c.MOV
 
-### Acting out the dialogue
-
-Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
-
-\*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
-
-### Wizarding with the Pi (optional)
-In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
-
-\*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+Based on the relative few symptoms listed, caller might need to be prompted with different categories of symptoms in order for the chatbot to get a more complete picture of the patient's health. On the other hand, callers tend to elaborate more than required in listing their symptoms with stories and experiences. A limited list of target words will need to be used to limit the info collected and passed along to health professionals.
 
 # Lab 3 Part 2
 
@@ -126,39 +116,37 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 
 ## Prep for Part 2
 
-1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
-3. Make a new storyboard, diagram and/or script based on these reflections.
+Feedback: Instead of asking an open ended question like 'list your symptoms', I decided to ask each COVID symptoms individually and prompted by the chatbot. This way the caller doesn't need to know the terminology for their experience and can also avoid the narrative callers give that chatbots are not designed to handle. Also, more introductory informational questions are asked before the symptoms in order to give a more complete picture to the record produced by the call. Information of COVID in the area was added at the very beginning for callers who onl want info on prevalence in their area. Then, a emergency symptoms question was placed before the standard symptoms to save time and better instruct those extreme cases. Lastly, a printout of the answers in made for internal records and associated with the phone number who called. 
 
 ## Prototype your system
 
-The system should:
-* use the Raspberry Pi 
-* use one or more sensors
-* require participants to speak to it. 
+The Pi is being used here to mimic a chatbot you would interact with over a phone call. Cell service is significantly better at serving rural areas compared to a reliable internet connection. A caller would call the phone line seeking to either (1) gauge the risk of COVID in their area or (2) asses the severity of their symptoms or possible exposure to COVID. If the caller presents symptoms of COVID, a record of the call is produced that can be forwarded to any private or public healthcare system.   
 
-*Document how the system works*
+![Note Sep 25, 2022](https://user-images.githubusercontent.com/50084830/193652617-ad6146ca-d03f-4e14-a0e3-8e5c823ad869.jpg)
 
-*Include videos or screencaptures of both the system and the controller.*
+Portions of the code structure I used in this were based on work by zw282 in last years's course. I used the helper functions created there as a starting place. 
+The questions and symptoms I am asking are taken directly from the CDC's self screening checklist. 
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
+https://cornellprod-my.sharepoint.com/:v:/g/personal/cjm424_cornell_edu/EYR5b2xSeENFuW7Skzh8pNIBObpOJGD1RUIQNJwhPjXrVQ?e=8D8Sye
+
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
+The edges cases are well handled. Prompting the caller with options instead of deciphering open responses made the interaction more streamlined. I ran into issues with numerical speech-to-text recognition where certain numbers like 'one' and 'oh' were not reliably recognized. The system also has a human component to it with an introduction and conclusion, greeting and farewell. Automating was easier than anticipated but all possible branches of the dialogue had to be mapped out. 
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+I did not use a controller for this system. The system is autonomous as seen in the videos. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
-
+I did not use a controller for this system. The system is autonomous as seen in the videos. 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+Since the system is designed to be accessible in rural areas and thus over cellular service, there aren't many other modalities that would make sense here. Possible adding in features and interactions using the number pad would be more helpful in some cases such as your zip code or date of birth. Recording the individual responses would allow me to create a larger dataset of target words for the recognizer. Recognizing more of the vocabulary people use from different backgrounds would expand access to this systems and its value.  
 
