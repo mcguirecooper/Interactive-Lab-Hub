@@ -116,20 +116,11 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 
 ## Prep for Part 2
 
-1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
-3. Make a new storyboard, diagram and/or script based on these reflections.
+Feedback: Instead of asking an open ended question like 'list your symptoms', I decided to ask each COVID symptoms individually and prompted by the chatbot. This way the caller doesn't need to know the terminology for their experience and can also avoid the narrative callers give that chatbots are not designed to handle. Also, more introductory informational questions are asked before the symptoms in order to give a more complete picture to the record produced by the call. Information of COVID in the area was added at the very beginning for callers who onl want info on prevalence in their area. Then, a emergency symptoms question was placed before the standard symptoms to save time and better instruct those extreme cases. Lastly, a printout of the answers in made for internal records and associated with the phone number who called. 
 
 ## Prototype your system
 
-The system should:
-* use the Raspberry Pi 
-* use one or more sensors
-* require participants to speak to it. 
-
-*Document how the system works*
-
-*Include videos or screencaptures of both the system and the controller.*
+![Note Sep 25, 2022](https://user-images.githubusercontent.com/50084830/193652617-ad6146ca-d03f-4e14-a0e3-8e5c823ad869.jpg)
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
