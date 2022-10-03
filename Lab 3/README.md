@@ -120,6 +120,8 @@ Feedback: Instead of asking an open ended question like 'list your symptoms', I 
 
 ## Prototype your system
 
+The Pi is being used here to mimic a chatbot you would interact with over a phone call. Cell service is significantly better at serving rural areas compared to a reliable internet connection. A caller would call the phone line seeking to either (1) gauge the risk of COVID in their area or (2) asses the severity of their symptoms or possible exposure to COVID. If the caller presents symptoms of COVID, a record of the call is produced that can be forwarded to any private or public healthcare system.   
+
 ![Note Sep 25, 2022](https://user-images.githubusercontent.com/50084830/193652617-ad6146ca-d03f-4e14-a0e3-8e5c823ad869.jpg)
 
 ## Test the system
