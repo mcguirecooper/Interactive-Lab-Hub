@@ -124,8 +124,13 @@ The Pi is being used here to mimic a chatbot you would interact with over a phon
 
 ![Note Sep 25, 2022](https://user-images.githubusercontent.com/50084830/193652617-ad6146ca-d03f-4e14-a0e3-8e5c823ad869.jpg)
 
+Portions of the code structure I used in this were based on work by zw282 in last years's course. I used the helper functions created there as a starting place. 
+The questions and symptoms I am asking are taken directly from the CDC's self screening checklist. 
+
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
+
+https://cornellprod-my.sharepoint.com/:v:/g/personal/cjm424_cornell_edu/EYR5b2xSeENFuW7Skzh8pNIBObpOJGD1RUIQNJwhPjXrVQ?e=8D8Sye
 
 Answer the following:
 
