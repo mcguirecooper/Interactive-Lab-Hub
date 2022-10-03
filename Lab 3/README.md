@@ -135,18 +135,18 @@ https://cornellprod-my.sharepoint.com/:v:/g/personal/cjm424_cornell_edu/EYR5b2xS
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
+The edges cases are well handled. Prompting the caller with options instead of deciphering open responses made the interaction more streamlined. I ran into issues with numerical speech-to-text recognition where certain numbers like 'one' and 'oh' were not reliably recognized. The system also has a human component to it with an introduction and conclusion, greeting and farewell. Automating was easier than anticipated but all possible branches of the dialogue had to be mapped out. 
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+I did not use a controller for this system. The system is autonomous as seen in the videos. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
-
+I did not use a controller for this system. The system is autonomous as seen in the videos. 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+Since the system is designed to be accessible in rural areas and thus over cellular service, there aren't many other modalities that would make sense here. Possible adding in features and interactions using the number pad would be more helpful in some cases such as your zip code or date of birth. Recording the individual responses would allow me to create a larger dataset of target words for the recognizer. Recognizing more of the vocabulary people use from different backgrounds would expand access to this systems and its value.  
 
