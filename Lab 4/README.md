@@ -241,6 +241,23 @@ Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+I ended up choosing to use only the accelerometer/gyro in my device for a couple reasons. First, why build a combination of a servo and proximity sensor to do what I have a component for specifically? Second, in attempting to construct the servo/prox mechanism, I found it to required too much space in the box I had to be within the realm of usable as I intended. 
+
+Here is an overview of the open box with its components. 
+
+![IMG-4345](https://user-images.githubusercontent.com/50084830/194992036-6855cfaf-9512-469f-9485-d00653fa9bf2.JPG)
+
+Here are the battery, pi, gyro, and capacitative touch connections.
+![IMG-4346](https://user-images.githubusercontent.com/50084830/194992003-4ae15b3a-40b4-488b-8d8c-e2fca4509a94.JPG)
+
+Here is the gyro. 
+![IMG-4347](https://user-images.githubusercontent.com/50084830/194991994-743c6d64-2182-42b2-9d59-1c4d9fc6fc99.JPG)
+
+Here is the capacitative touch component mounted underneath the pi. 
+![IMG-4348](https://user-images.githubusercontent.com/50084830/194991988-923631be-146f-42fa-a9e1-0c46c67d615e.JPG)
+
+Here is the closed box with the display showing. 
+![IMG-4349](https://user-images.githubusercontent.com/50084830/194991978-6bc1477d-fb4d-4278-8056-840aa7abf3cb.JPG)
 
 LAB PART 2
 
