@@ -225,6 +225,8 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+Sketches above in previous section. 
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
 Where is the best placement for delivery workers to notice the orientation indication. What should the display show in order to convey this side that is currently up is correct (same for opposite side). How forcefully does the device need to get the attention of workers, is a passive indication enough? 
