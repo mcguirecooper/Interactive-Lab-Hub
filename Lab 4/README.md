@@ -294,20 +294,37 @@ We encourage you to try using these controls, **while** paying particular attent
 ### Part F
 ### Record
 
-Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
-
+The device is intended to look and feel like a normal mail package box with an additional display added to one of the faces. 
 ![IMG_4354](https://user-images.githubusercontent.com/50084830/196290760-ff6ab2a5-5645-4923-add5-18a2e053fffa.JPG)
 
-https://drive.google.com/file/d/1XC6ulCa3ma7jJbXzpl_wLZDGmQs3WPnk/view?usp=sharing
+The following sequence of events will be shown in the images and videos:
+1. A blinking blue light announces to users that the device is on and ready. 
+2. A message, "No orientation assigned", is displayed to indicate no information has been given to the device. 
+3. The user presses either of the buttons next to the display to engage the device.
+4. A message, "Choose orientation", is displayed to prompt the user to touch any one of the six faces of the package.
+5. Once a valid touch is registered (lasting 0.5 seconds on only one face), a green light blinks to inform the user that the touch was registered, and that the device is now monitoring the orientation of the package.
+6. An image and message are displayed to indicated which way is up according to the orientation assignment. Arrows show which face in relation to the display. 
+7. If the package is in an incorrect orientation, a red light will blink until the orientation is correct. 
 
+Two user testing videos:
+
+https://drive.google.com/file/d/1XC6ulCa3ma7jJbXzpl_wLZDGmQs3WPnk/view?usp=sharing
 https://drive.google.com/file/d/1rBqZWuJWuOUwU-7Yk38YIDvtK8gmI2ft/view?usp=sharing
 
+The internals of the package. With only one LED strip, I decided to locate it centrally on the same face as the display so that the user could get immediate feedback on the registration of the correct orientation. 
 ![IMG_4357](https://user-images.githubusercontent.com/50084830/196290857-dfdace98-648f-4ae1-ab5c-05ee50ee757c.JPG)
+
+The 3dof accelerometer needed to be located against or in parallel with one of the faces of the package. It is located here for ease of prototyping.  
 ![IMG_4360](https://user-images.githubusercontent.com/50084830/196290858-af5b1661-b30a-4a3a-ad21-d04b7a5b1ed9.JPG)
-![IMG_4356](https://user-images.githubusercontent.com/50084830/196290859-08fd0598-2c9f-415a-a914-808c7c58c847.JPG)
+
+The first message the user sees when the device is started. Will continue to display this until orientation specified. 
 ![IMG_4355](https://user-images.githubusercontent.com/50084830/196290860-f1cbfdd2-3dbc-4d99-98f3-2abc8d06a933.JPG)
+
+The message the user sees once one of the buttons has been pressed to initiate the device. 
+![IMG_4356](https://user-images.githubusercontent.com/50084830/196290859-08fd0598-2c9f-415a-a914-808c7c58c847.JPG)
+
+The wiring of each face of the package led to issues with cable management. A purpose-built device would remedy this.  
 ![IMG_4359](https://user-images.githubusercontent.com/50084830/196290863-2ea6165a-a3e8-44c3-a72c-aa4807bb5156.JPG)
+
+Since the opening of the package is split in two, each respective face's capacitive touch inputs had to be combined. All connections to each face are located internally to preserve the outward appearance. 
 ![IMG_4358](https://user-images.githubusercontent.com/50084830/196291277-887ba05b-32a6-4f24-9256-d1f4cba4a5e0.JPG)
