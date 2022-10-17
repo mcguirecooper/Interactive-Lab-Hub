@@ -175,15 +175,16 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
-![Page1](https://user-images.githubusercontent.com/50084830/194977116-dbe64f8a-384a-499d-b5b3-5d7b18abb0ca.jpg)
-![Page2](https://user-images.githubusercontent.com/50084830/194977120-c6667bec-c119-4af5-aee7-bec375db70cf.jpg)
+
+![Page1 (1)](https://user-images.githubusercontent.com/50084830/196232888-e67ab447-80d0-4797-a5d5-762dcfb2bb0e.jpg)
+
+![Page2 (1)](https://user-images.githubusercontent.com/50084830/196232870-57296c27-3d12-41d9-ae06-5992b4b555ee.jpg)
+
+![Page3](https://user-images.githubusercontent.com/50084830/196232854-0dcc1642-6809-4a71-8fc3-dd8a83d9f738.jpg)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to answer those questions?\*\*\***
 
 What products being shipped would this best serve? How much space in the box will the device take up? If the capacitive tape requires two hands on eah side to assign a correct orientation, can this be done without picking up the package?
-
-**\*\*\*Pick one of these designs to prototype.\*\*\***
-
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -225,19 +226,15 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
-Sketches above in previous section. 
+![Page4](https://user-images.githubusercontent.com/50084830/196232787-c959aab1-f291-438d-b8c3-565d946c07a5.jpg)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
 Where is the best placement for delivery workers to notice the orientation indication. What should the display show in order to convey this side that is currently up is correct (same for opposite side). How forcefully does the device need to get the attention of workers, is a passive indication enough? 
 
-**\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
-
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
 The display can integrate seamlessly into a standard package that comes in the mail. The display can be placed to avoid the to and from sections on the front face of the package. Delivery workers usually have to look at the front face to reference the address or barcode, so this could be noticed regularly along the package's route from start to end. The arrow will orient to the correct face in a way that is hopefully straighforward. 
-
-Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
 
