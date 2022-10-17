@@ -3,7 +3,7 @@
 **NAMES OF COLLABORATORS HERE**
 
 
-For lab this week, we focus on both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
+For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
 ## Part 1 Lab Preparation
 
@@ -14,7 +14,7 @@ As always, pull updates from the class Interactive-Lab-Hub to both your Pi and y
 
 ```
 pi@ixe00:~$ cd Interactive-Lab-Hub
-pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2021
+pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2022
 pi@ixe00:~/Interactive-Lab-Hub $ git add .
 pi@ixe00:~/Interactive-Lab-Hub $ git commit -m "get lab4 content"
 pi@ixe00:~/Interactive-Lab-Hub $ git push
@@ -153,9 +153,7 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Joystick_Py) to learn more about the sensor!
 
-#### (Optional) Distance Sensor
-
-Note: We did not distribute this sensor to you, so if you are interested in playing with it, please come pick it up from the TA!
+#### Distance Sensor
 
 Earlier we have asked you to play with the proximity sensor, which is able to sense object within a short distance. Here, we offer [Qwiic Multi Distance Sensor](https://www.sparkfun.com/products/17072), which has a field of view of about 25° and is able to detect objects up to 3 meters away! 
 
@@ -178,10 +176,15 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+![Page1 (1)](https://user-images.githubusercontent.com/50084830/196232888-e67ab447-80d0-4797-a5d5-762dcfb2bb0e.jpg)
 
-**\*\*\*Pick one of these designs to prototype.\*\*\***
+![Page2 (1)](https://user-images.githubusercontent.com/50084830/196232870-57296c27-3d12-41d9-ae06-5992b4b555ee.jpg)
 
+![Page3](https://user-images.githubusercontent.com/50084830/196232854-0dcc1642-6809-4a71-8fc3-dd8a83d9f738.jpg)
+
+**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to answer those questions?\*\*\***
+
+What products being shipped would this best serve? How much space in the box will the device take up? If the capacitive tape requires two hands on eah side to assign a correct orientation, can this be done without picking up the package?
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -223,16 +226,35 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+![Page4](https://user-images.githubusercontent.com/50084830/196232787-c959aab1-f291-438d-b8c3-565d946c07a5.jpg)
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
-**\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+Where is the best placement for delivery workers to notice the orientation indication. What should the display show in order to convey this side that is currently up is correct (same for opposite side). How forcefully does the device need to get the attention of workers, is a passive indication enough? 
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
-Build a cardbord prototype of your design.
+The display can integrate seamlessly into a standard package that comes in the mail. The display can be placed to avoid the to and from sections on the front face of the package. Delivery workers usually have to look at the front face to reference the address or barcode, so this could be noticed regularly along the package's route from start to end. The arrow will orient to the correct face in a way that is hopefully straighforward. 
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+I ended up choosing to use only the accelerometer/gyro in my device for a couple reasons. First, why build a combination of a servo and proximity sensor to do what I have a component for specifically? Second, in attempting to construct the servo/prox mechanism, I found it to required too much space in the box I had to be within the realm of usable as I intended. 
+
+Here is an overview of the open box with its components. 
+
+![IMG-4345](https://user-images.githubusercontent.com/50084830/194992036-6855cfaf-9512-469f-9485-d00653fa9bf2.JPG)
+
+Here are the battery, pi, gyro, and capacitative touch connections.
+![IMG-4346](https://user-images.githubusercontent.com/50084830/194992003-4ae15b3a-40b4-488b-8d8c-e2fca4509a94.JPG)
+
+Here is the gyro. 
+![IMG-4347](https://user-images.githubusercontent.com/50084830/194991994-743c6d64-2182-42b2-9d59-1c4d9fc6fc99.JPG)
+
+Here is the capacitative touch component mounted underneath the pi. 
+![IMG-4348](https://user-images.githubusercontent.com/50084830/194991988-923631be-146f-42fa-a9e1-0c46c67d615e.JPG)
+
+Here is the closed box with the display showing. 
+![IMG-4349](https://user-images.githubusercontent.com/50084830/194991978-6bc1477d-fb4d-4278-8056-840aa7abf3cb.JPG)
 
 LAB PART 2
 
@@ -243,7 +265,7 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 ### Part E (Optional)
 ### Servo Control with Joystick
 
-In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which we will be distributing the battery packs in the class. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
+In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which are included in your kit. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
 
 <img src="Servo_Setup.jpg" width="400"/>
 
