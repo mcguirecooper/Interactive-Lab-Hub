@@ -299,3 +299,15 @@ Document all the prototypes and iterations you have designed and worked on! Agai
 * "Works like": shows what the device can do
 * "Acts like": shows how a person would interact with the device
 
+![IMG_4354](https://user-images.githubusercontent.com/50084830/196290760-ff6ab2a5-5645-4923-add5-18a2e053fffa.JPG)
+
+https://drive.google.com/file/d/1XC6ulCa3ma7jJbXzpl_wLZDGmQs3WPnk/view?usp=sharing
+
+https://drive.google.com/file/d/1rBqZWuJWuOUwU-7Yk38YIDvtK8gmI2ft/view?usp=sharing
+
+![IMG_4357](https://user-images.githubusercontent.com/50084830/196290857-dfdace98-648f-4ae1-ab5c-05ee50ee757c.JPG)
+![IMG_4360](https://user-images.githubusercontent.com/50084830/196290858-af5b1661-b30a-4a3a-ad21-d04b7a5b1ed9.JPG)
+![IMG_4356](https://user-images.githubusercontent.com/50084830/196290859-08fd0598-2c9f-415a-a914-808c7c58c847.JPG)
+![IMG_4355](https://user-images.githubusercontent.com/50084830/196290860-f1cbfdd2-3dbc-4d99-98f3-2abc8d06a933.JPG)
+![IMG_4359](https://user-images.githubusercontent.com/50084830/196290863-2ea6165a-a3e8-44c3-a72c-aa4807bb5156.JPG)
+![IMG_4358](https://user-images.githubusercontent.com/50084830/196291277-887ba05b-32a6-4f24-9256-d1f4cba4a5e0.JPG)
