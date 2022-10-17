@@ -63,6 +63,7 @@ disp.image(image, rotation)
 
 font1 = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 34)
 font2 = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 40)
+font3 = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 80)
 
 y = -2
 draw.text((0, y), 'NO', font=font1, fill="#FF0000")
@@ -109,8 +110,8 @@ def curr_accel_orient():
         else: orient = 3
     elif max_index == 2:
         if max_value > 0:
-            orient = 2
-        else: orient = 1 
+            orient = 1
+        else: orient = 2 
     print(max_index, max_value, orient)
     return orient
 
@@ -175,10 +176,18 @@ while asking_for_orientation:
             orientation = 5
             blink_green()
             break
+    elif mpr121[0].value:
+        time.sleep(0.5)
+        if mpr121[0].value:
+            orientation = 1
+            blink_green()
+            break
 
 while orientation != 0:
     draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
     disp.image(image, rotation)
+
+    arrows = ['N','⊚','⊕','⇐','⇒','⇓','⇑']
 
     x = width/2
     y = -2
@@ -187,11 +196,13 @@ while orientation != 0:
     draw.text((x, y), 'SIDE', font=font2, fill="#FFFFFF")
     y += font2.getsize('SIDE')[1]
     draw.text((x, y), 'UP', font=font2, fill="#FFFFFF")
-    draw.text((20, height/4), str(orientation), font=font2, fill="#FFFFFF")
+    draw.text((20, height/8), arrows[orientation], font=font3, fill="#FFFFFF")
     disp.image(image, rotation)
 
     if curr_accel_orient() != orientation:
         blink_red()
+    
+    time.sleep(1)
     
 
 
