@@ -153,6 +153,8 @@ For technical references:
 
 **\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
 
+https://github.com/mcguirecooper/Interactive-Lab-Hub/blob/d6b51898f9ec9f012de2e7a1f4a77806be2ff316/Lab%205/ExampleAudioFFT.py 
+
 ### (Optional Reading) Introducing Additional Concepts
 The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pis, so you can move onto part B.** However, you are welcome to try it on your personal computer. 
 
