@@ -103,12 +103,16 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
 ![image](https://user-images.githubusercontent.com/50084830/197583649-d48fe3f1-b016-4f2e-abca-9089e2b74636.png)
+This might be best for a segmentation use, where you might be taking photos or a video of something but want to change the background in real time or in editing. You can define contours and use those to segment the foreground from the background, allowing for an semi-automated background replacement. 
 
 ![image](https://user-images.githubusercontent.com/50084830/197584788-1e2473fc-2dd0-4191-931a-62fd278eb995.png)
+This can be used in order to determine if a subject is facing the camera and has their eyes open. This could be used by a photographer trying to take a group shot. You could quickly tell who was not facing the camera and who was blinking. (if you could train it to be that good)
 
 ![image](https://user-images.githubusercontent.com/50084830/197587381-be613fbc-3cc0-4511-bf7c-bc7980407bbb.png)
+Optical flow could be used on a device that is mounted from a bridge above water to understand the boat traffic beneath it. You could visualize patterns and directions of traffic. 
 
 ![image](https://user-images.githubusercontent.com/50084830/197589552-7c7b1b3d-fbb2-44f2-abd5-a3692fe2dc7e.png)
+Probably the most general use case, object detection can do a number of things. One use might be on a refridgerator to see what was inside and check it off a grocery list, or maybe give a lifestyle coach's warning if you are eating or drinking too much of an unhealthy thing. 
 
 
 #### Filtering, FFTs, and Time Series data. 
@@ -237,6 +241,24 @@ This might take a while to get fully installed. After installation, connect your
 * Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.](ThinkingThroughContextandInteraction.png)
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+
+Who is involved:
+
+What is making noises:
+
+When: 
+
+Where:
+
+Task Goals:
+
+When to stand out:
+
+When to blend in:
+
+Implicit behaviors:
+
+Explicit behaviors:
 
 ### Part C
 ### Test the interaction prototype
