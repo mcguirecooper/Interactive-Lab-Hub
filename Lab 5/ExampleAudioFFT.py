@@ -45,6 +45,8 @@ def main():
     nextTimeStamp = time.time()
     stream.start_stream()
     if True:
+        vols = []
+        sumvols = 0
         while True:
             frames = audioQueue.get() #Get DataFrom the audioDriver (see _callbackfunction how the data arrives)
             if not frames:
@@ -97,10 +99,18 @@ def main():
 
                 LoudestFrequency = frequencies[amplitudes.argmax()]
                 
+                sumvols += volumneSlow
+                vols.append(volumneSlow)
+                
+                if (len(vols) > 5):
+                    sumvols -= vols.pop(0)
+                
+                mov_avg = sumvols / len(vols)
+
                 print("Loudest Frqeuncy:",LoudestFrequency)
                 print("RMS volume:",volumneSlow)
                 print("Volume Change:",volumechange)
-                
+                print("Moving Average Volume:", mov_avg)
                 nextTimeStamp = UPDATE_INTERVAL+time.time() # See `UPDATE_INTERVAL` above
 
 
