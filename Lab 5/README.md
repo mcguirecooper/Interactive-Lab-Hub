@@ -244,23 +244,25 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
-Who is involved:
+I always list everything I bought from the grocery store each week to remind me of all my meal, snack, beverage, and dessert options for the week. I do this manually but I believe object classification has become good enough to assist in this. 
 
-What is making noises:
+Who is involved: Persons 
 
-When: 
+What is making noises (alerts): Speaker plays tone to alert user that the object has been classified as something.
 
-Where:
+When: Coming back from grocery shopping
 
-Task Goals:
+Where: On counter in home, or in front of refridgerator
 
-When to stand out:
+Task Goals: To list all the things bought at the grocery store for reference (receipts suck). To classify every object put in front of it and get the user to confirm the classification. 
 
-When to blend in:
+When to stand out: When the user presses a button to engage the device for a new classification.
 
-Implicit behaviors:
+When to blend in: Any other time. No functionality else. 
 
-Explicit behaviors:
+Implicit behaviors: Remember what you bought and do not waste anything. 
+
+Explicit behaviors: Chime in on classification when prompted. 
 
 ### Part C
 ### Test the interaction prototype
@@ -272,11 +274,16 @@ For example:
 1. When it fails, why does it fail?
 1. Based on the behavior you have seen, what other scenarios could cause problems?
 
+![image](https://user-images.githubusercontent.com/50084830/197625700-a0f379aa-2c6d-4296-99d2-278d29bf3286.png)
+I haven't tested out every food I have, but the model does well with packaged good. Vegetables and fruits it struggles more with. The model is based on a Microsoft research model "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows" that has been trained on a large dataset, and I finetuned it to the lighting and environment of my apartment. The classification is usually very quick around 0-2 seconds.
+
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
 1. How bad would they be impacted by a miss classification?
 1. How could change your interactive system to address this?
 1. Are there optimizations you can try to do on your sense-making algorithm.
+
+The user is being asked to confirm every classification, so the device is setting expectations far below perfection. 
 
 ### Part D
 ### Characterize your own Observant system
