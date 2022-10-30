@@ -237,16 +237,11 @@ This might take a while to get fully installed. After installation, connect your
 ### Part B
 ### Construct a simple interaction.
 
-* Pick one of the models you have tried, and experiment with prototyping an interaction.
-* This can be as simple as the boat detector showen in a previous lecture from Nikolas Matelaro.
-* Try out different interaction outputs and inputs.
-* Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.](ThinkingThroughContextandInteraction.png)
-
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
 I always list everything I bought from the grocery store each week to remind me of all my meal, snack, beverage, and dessert options for the week. I do this manually but I believe object classification has become good enough to assist in this. 
 
-Who is involved: Persons 
+Who is involved: Anyone who wants to put away items in a pantry and remember them. 
 
 What is making noises (alerts): Speaker plays tone to alert user that the object has been classified as something.
 
@@ -268,22 +263,12 @@ Explicit behaviors: Chime in on classification when prompted.
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
-For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
 
 ![image](https://user-images.githubusercontent.com/50084830/197625700-a0f379aa-2c6d-4296-99d2-278d29bf3286.png)
 I haven't tested out every food I have, but the model does well with packaged good. Vegetables and fruits it struggles more with. The model is based on a Microsoft research model "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows" that has been trained on a large dataset, and I finetuned it to the lighting and environment of my apartment. The classification is usually very quick around 0-2 seconds.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
-1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
-
-The user is being asked to confirm every classification, so the device is setting expectations far below perfection. 
+The user is being asked to confirm every classification, so the device is setting expectations far below perfection. A misclassification wouldn't be very impactful due to the low stakes of knowing what you bought. Also, a misclassification can be caught by the user immediately. Users can simply retry the object detection if they are unsatisfied with the result. A button or key is being pressed to confirm the classification. Eventaully this would probably be replaced with a touch screen with would have a green check mark and red X to more quickly go through many items. The algorithms for object detection and classification work best when singular items are done at a time, and accuracy is very important in this use case. So, I would not make any changes to the algorithms.
 
 ### Part D
 ### Characterize your own Observant system
@@ -300,8 +285,14 @@ During the lecture, we mentioned questions to help characterize a material:
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
+Video here with paper prototype of touchscreen on refridge and a list of items above it that you can scroll through. The webcam is located on the side of the refridge, facing the counter in front of it. The user starts the device by hitting 'add items' and places an item on the counter. The device chimes a sound saying it recognized the object at something. Then the user hits the check mark or X and the item is added to the list. The user then places the item in the refridge. The user ends the interaction by hitting 'show list'. 
+
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+Since I am using the Microsoft SWIN model and it is very large, I had to use my laptop to house the model and connect with the webcam instead of using the raspberry pi. The raspberry pi takes a magnitude longer to process the model when given an image, so for this demo I just used the processing power I had easiest access to. I also had trouble moving the model into this github repo so if you want to see the code, please just sent me a message on Slack. 
+
+
