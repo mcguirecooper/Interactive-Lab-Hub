@@ -286,7 +286,9 @@ During the lecture, we mentioned questions to help characterize a material:
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
-Video here with paper prototype of touchscreen on refridge and a list of items above it that you can scroll through. The webcam is located on the side of the refridge, facing the counter in front of it. The user starts the device by hitting 'add items' and places an item on the counter. The device chimes a sound saying it recognized the object at something. Then the user hits the check mark or X and the item is added to the list. The user then places the item in the refridge. The user ends the interaction by hitting 'show list'. 
+Video here with paper prototype of touchscreen on refridgerator and a list of items above it that you can scroll through. The webcam is located on the side of the refridgerator, facing the counter in front of it. The user starts the device by hitting 'add items' and places an item on the counter. The device chimes a sound saying it recognized the object as something. Then the user hits the check mark or X and the item is added to the list. The user then places the item in the refridgerator. The user ends the interaction by no longer tapping 'add items'. 
+
+https://drive.google.com/file/d/10QgmoWZGLLWm_XVQj1eXwQjwf7U4LnmZ/view?usp=sharing
 
 ### Part 2.
 
@@ -296,4 +298,6 @@ Following exploration and reflection from Part 1, finish building your interacti
 
 Since I am using the Microsoft SWIN model and it is very large, I had to use my laptop to house the model and connect with the webcam instead of using the raspberry pi. The raspberry pi takes a magnitude longer to process the model when given an image, so for this demo I just used the processing power I had easiest access to. I also had trouble moving the model into this github repo so if you want to see the code, please just sent me a message on Slack. 
 
+It decided to break up my demonstration and testing into the model/tech itself and the user interaction. The best way to interact with the device is to use a touchscrren so you can keep the device small and enable scrolling through a long list. Also tapping a screen with large buttons is easy and understandable. Further, the refridgerator will be electrified, so the device can easily be integrated. 
 
+I intend to make this my final project so the two parts will be put together. But the time required to get this far was so high, I decided to make the demo simpler to create and show. 
