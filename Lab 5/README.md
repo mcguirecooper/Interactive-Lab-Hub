@@ -300,4 +300,4 @@ Since I am using the Microsoft SWIN model and it is very large, I had to use my 
 
 It decided to break up my demonstration and testing into the model/tech itself and the user interaction. The best way to interact with the device is to use a touchscrren so you can keep the device small and enable scrolling through a long list. Also tapping a screen with large buttons is easy and understandable. Further, the refridgerator will be electrified, so the device can easily be integrated. 
 
-I intend to make this my final project so the two parts will be put together. But the time required to get this far was so high, I decided to make the demo simpler to create and show. 
+I intend to make this my final project so the two parts (demo video above and this one) will be put together. But the time required to get this far was so high, I decided to make the demo simpler to create and show. 
