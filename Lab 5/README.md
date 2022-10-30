@@ -288,7 +288,7 @@ During the lecture, we mentioned questions to help characterize a material:
 
 Video here with paper prototype of touchscreen on refridgerator and a list of items above it that you can scroll through. The webcam is located on the side of the refridgerator, facing the counter in front of it. The user starts the device by hitting 'add items' and places an item on the counter. The device chimes a sound saying it recognized the object as something. Then the user hits the check mark or X and the item is added to the list. The user then places the item in the refridgerator. The user ends the interaction by no longer tapping 'add items'. 
 
-https://drive.google.com/file/d/10QgmoWZGLLWm_XVQj1eXwQjwf7U4LnmZ/view?usp=sharing
+https://drive.google.com/file/d/10QgmoWZGLLWm_XVQj1eXwQjwf7U4LnmZ/view?usp=share_link
 
 ![IMG_4376](https://user-images.githubusercontent.com/50084830/198896835-cab9357b-1069-467b-8753-bf86f2c1afea.jpg)
 
@@ -304,3 +304,7 @@ Since I am using the Microsoft SWIN model and it is very large, I had to use my 
 It decided to break up my demonstration and testing into the model/tech itself and the user interaction. The best way to interact with the device is to use a touchscrren so you can keep the device small and enable scrolling through a long list. Also tapping a screen with large buttons is easy and understandable. Further, the refridgerator will be electrified, so the device can easily be integrated. 
 
 I intend to make this my final project so the two parts (demo video above and this one) will be put together. But the time required to get this far was so high, I decided to make the demo simpler to create and show. 
+
+https://drive.google.com/file/d/15lWffRcCcTYxBCQYc6V3Bie3UJSQBqoh/view?usp=share_link
+
+The model correctly classfied all three items I had on hand. The only time it failed ('thumbhole' versus 'yoghurt') was likely because my hand was in the image frame since I was placing the item. I noticed that this model proves less accurate on the vegetables I had and also poorly on small items. This is likely a resolution issue and a lack of training data on the many varieties of vegetables.  
