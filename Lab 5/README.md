@@ -268,6 +268,7 @@ Now flight test your interactive prototype and **note down your observations**:
 I haven't tested out every food I have, but the model does well with packaged good. Vegetables and fruits it struggles more with. The model is based on a Microsoft research model "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows" that has been trained on a large dataset, and I finetuned it to the lighting and environment of my apartment. The classification is usually very quick around 0-2 seconds.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
+
 The user is being asked to confirm every classification, so the device is setting expectations far below perfection. A misclassification wouldn't be very impactful due to the low stakes of knowing what you bought. Also, a misclassification can be caught by the user immediately. Users can simply retry the object detection if they are unsatisfied with the result. A button or key is being pressed to confirm the classification. Eventaully this would probably be replaced with a touch screen with would have a green check mark and red X to more quickly go through many items. The algorithms for object detection and classification work best when singular items are done at a time, and accuracy is very important in this use case. So, I would not make any changes to the algorithms.
 
 ### Part D
