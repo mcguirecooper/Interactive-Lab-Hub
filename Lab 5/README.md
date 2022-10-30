@@ -290,7 +290,8 @@ Video here with paper prototype of touchscreen on refridgerator and a list of it
 
 https://drive.google.com/file/d/10QgmoWZGLLWm_XVQj1eXwQjwf7U4LnmZ/view?usp=sharing
 
-![IMG_4375](https://user-images.githubusercontent.com/50084830/198896691-1539daaf-480a-46d4-a3f1-acb584af0798.jpg)
+![IMG_4376](https://user-images.githubusercontent.com/50084830/198896835-cab9357b-1069-467b-8753-bf86f2c1afea.jpg)
+
 
 ### Part 2.
 
