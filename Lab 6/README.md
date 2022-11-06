@@ -2,6 +2,30 @@
 
 Jacob Everly, Martin Eckardt
 
+
+
+
+Worked as group
+
+https://github.com/JacobEverly/Interactive-Lab-Hub/blob/Fall2022/Lab%206/README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Prep
 
 1. Pull the new changes from the class interactive-lab-hub. (You should be familiar with this already!)
