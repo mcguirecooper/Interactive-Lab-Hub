@@ -237,46 +237,39 @@ This might take a while to get fully installed. After installation, connect your
 ### Part B
 ### Construct a simple interaction.
 
-* Pick one of the models you have tried, and experiment with prototyping an interaction.
-* This can be as simple as the boat detector showen in a previous lecture from Nikolas Matelaro.
-* Try out different interaction outputs and inputs.
-* Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.](ThinkingThroughContextandInteraction.png)
-
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
-Who is involved:
+I always list everything I bought from the grocery store each week to remind me of all my meal, snack, beverage, and dessert options for the week. I do this manually but I believe object classification has become good enough to assist in this. 
 
-What is making noises:
+Who is involved: Anyone who wants to put away items in a pantry and remember them. 
 
-When: 
+What is making noises (alerts): Speaker plays tone to alert user that the object has been classified as something.
 
-Where:
+When: Coming back from grocery shopping
 
-Task Goals:
+Where: On counter in home, or in front of refridgerator
 
-When to stand out:
+Task Goals: To list all the things bought at the grocery store for reference (receipts suck). To classify every object put in front of it and get the user to confirm the classification. 
 
-When to blend in:
+When to stand out: When the user presses a button to engage the device for a new classification.
 
-Implicit behaviors:
+When to blend in: Any other time. No functionality else. 
 
-Explicit behaviors:
+Implicit behaviors: Remember what you bought and do not waste anything. 
+
+Explicit behaviors: Chime in on classification when prompted. 
 
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
-For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+
+![image](https://user-images.githubusercontent.com/50084830/197625700-a0f379aa-2c6d-4296-99d2-278d29bf3286.png)
+I haven't tested out every food I have, but the model does well with packaged good. Vegetables and fruits it struggles more with. The model is based on a Microsoft research model "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows" that has been trained on a large dataset, and I finetuned it to the lighting and environment of my apartment. The classification is usually very quick around 0-2 seconds.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
-1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+
+The user is being asked to confirm every classification, so the device is setting expectations far below perfection. A misclassification wouldn't be very impactful due to the low stakes of knowing what you bought. Also, a misclassification can be caught by the user immediately. Users can simply retry the object detection if they are unsatisfied with the result. A button or key is being pressed to confirm the classification. Eventaully this would probably be replaced with a touch screen with would have a green check mark and red X to more quickly go through many items. The algorithms for object detection and classification work best when singular items are done at a time, and accuracy is very important in this use case. So, I would not make any changes to the algorithms.
 
 ### Part D
 ### Characterize your own Observant system
@@ -293,8 +286,25 @@ During the lecture, we mentioned questions to help characterize a material:
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
+Video here with paper prototype of touchscreen on refridgerator and a list of items above it that you can scroll through. The webcam is located on the side of the refridgerator, facing the counter in front of it. The user starts the device by hitting 'add items' and places an item on the counter. The device chimes a sound saying it recognized the object as something. Then the user hits the check mark or X and the item is added to the list. The user then places the item in the refridgerator. The user ends the interaction by no longer tapping 'add items'. 
+
+https://drive.google.com/file/d/10QgmoWZGLLWm_XVQj1eXwQjwf7U4LnmZ/view?usp=share_link
+
+![IMG_4376](https://user-images.githubusercontent.com/50084830/198896835-cab9357b-1069-467b-8753-bf86f2c1afea.jpg)
+
+
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+Since I am using the Microsoft SWIN model and it is very large, I had to use my laptop to house the model and connect with the webcam instead of using the raspberry pi. The raspberry pi takes a magnitude longer to process the model when given an image, so for this demo I just used the processing power I had easiest access to. I also had trouble moving the model into this github repo so if you want to see the code, please just sent me a message on Slack. 
+
+It decided to break up my demonstration and testing into the model/tech itself and the user interaction. The best way to interact with the device is to use a touchscrren so you can keep the device small and enable scrolling through a long list. Also tapping a screen with large buttons is easy and understandable. Further, the refridgerator will be electrified, so the device can easily be integrated. 
+
+I intend to make this my final project so the two parts (demo video above and this one) will be put together. But the time required to get this far was so high, I decided to make the demo simpler to create and show. 
+
+https://drive.google.com/file/d/15lWffRcCcTYxBCQYc6V3Bie3UJSQBqoh/view?usp=share_link
+
+The model correctly classfied all three items I had on hand. The only time it failed ('thumbhole' versus 'yoghurt') was likely because my hand was in the image frame since I was placing the item. I noticed that this model proves less accurate on the vegetables I had and also poorly on small items. This is likely a resolution issue and a lack of training data on the many varieties of vegetables.  
