@@ -1,6 +1,6 @@
 # Little Interactions Everywhere
 
-**NAMES OF COLLABORATORS HERE**
+Jacob Everly, Martin Eckardt
 
 ## Prep
 
