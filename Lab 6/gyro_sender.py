@@ -18,7 +18,7 @@ client.connect(
     'farlab.infosci.cornell.edu',
     port=8883)
 
-topic = 'IDD/jacob/is /cool'
+topic = 'IDD/jacob/is/cool'
 
 while True:
     val = str(msa.acceleration)
