@@ -3,23 +3,31 @@
 # SPDX-License-Identifier: Unlicense
 import board
 from time import sleep
+from datetime import datetime
 import adafruit_st25dv16
 from adafruit_msa3xx import MSA311
 import subprocess
-import cryptography
-
-from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives.asymmetric import rsa
-private_key = rsa.generate_private_key(
-    public_exponent=65537,
-    key_size=2048,
-    backend=default_backend()
-)
-public_key = private_key.public_key()
+from ecdsa import SigningKey
 
 i2c = board.I2C()
 eeprom = adafruit_st25dv16.EEPROM_I2C(i2c)
 msa = MSA311(i2c)
+
+sk = SigningKey.generate()
+vk = sk.verifying_key
+
+print("""\
+  _____              _                         _______                 _               
+ |  __ \            | |                       |__   __|               | |              
+ | |__) |__ _   ___ | | __ __ _   __ _   ___     | | _ __  __ _   ___ | | __ ___  _ __ 
+ |  ___// _` | / __|| |/ // _` | / _` | / _ \    | || '__|/ _` | / __|| |/ // _ \| '__|
+ | |   | (_| || (__ |   <| (_| || (_| ||  __/    | || |  | (_| || (__ |   <|  __/| |   
+ |_|    \__,_| \___||_|\_\\__,_| \__, | \___|    |_||_|   \__,_| \___||_|\_\\___||_|   
+                                  __/ |                                                
+                                 |___/                                                 
+""")
+print("🔑 Verifying Key:")
+print(vk.to_string().hex())
 
 def curr_accel():
     max_value = 0
@@ -35,6 +43,9 @@ def curr_temp():
     return float(Temp) / 1000
 
 def write_to_nfc(header, mess): 
+    print("Writing to NFC Chip:")
+    print(mess)
+
     head = header
 
     l=len(mess)
@@ -48,24 +59,22 @@ def write_to_nfc(header, mess):
     eeprom[k:k+l]=bytearray(mess, encoding='utf-8')
     eeprom[k+l]=0xfe
 
-    print("Writing to NFC Chip")
-
-
-for i in range(0, 6):
-    j = i * 16
-    hex_string = ":".join("%02x" % b for b in eeprom[j:j+15])
-    print(j, "> ", hex_string, "> ", eeprom[j:j+15])
 
 max_accel = 0
 max_temp = 0
 while True:
     
-    max_accel = max(curr_accel(), max_accel)
-    max_temp = max(curr_temp(), max_temp)
+    max_accel = round(max(curr_accel(), max_accel))
+    max_temp = round(max(curr_temp(), max_temp))
     opened= 0
 
     header = 0x00
-    message=f'Max accelaration: {max_accel} - Max Temperature: {max_temp}'
-    write_to_nfc(header, message)
+    
+    report=f'Time: {datetime.now()} - Max acc: {max_accel} - Max Temp: {max_temp}'
+    signature = sk.sign(report.encode('UTF-8'))
+
+    msg = f"Report: [{report}] Signature {signature.hex()}"
+
+    write_to_nfc(header, msg)
 
     sleep(2)
